@@ -31,7 +31,6 @@ age = 31;
 const birthYear = 1991;
 // birthYear = 1990; // error
 // const job; // error
-*/
 
 ////////////////////////////////////
 // Basic Operators
@@ -64,3 +63,24 @@ console.log(ageSarah >= 18);
 const isFullAge = ageSarah >= 18;
 
 console.log(now - 1991 > now - 2018);
+
+const favourite = prompt("What's your favourite number?");
+console.log(favourite)
+console.log(typeof favourite)
+
+if (favourite === 23) // '23' == 23
+    console.log("23 is an amazing number!")
+*/
+
+const hasDrivenLicense = true;
+const hasGoodVision = false;
+
+console.log(hasDrivenLicense && hasGoodVision);
+console.log(hasDrivenLicense || hasGoodVision);
+
+const shouldDrive = hasDrivenLicense && hasGoodVision;
+if (shouldDrive){
+    console.log("No problem!")
+} else {
+    console.log("Don't!")
+}
