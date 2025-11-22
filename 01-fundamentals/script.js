@@ -70,7 +70,6 @@ console.log(typeof favourite)
 
 if (favourite === 23) // '23' == 23
     console.log("23 is an amazing number!")
-*/
 
 const hasDrivenLicense = true;
 const hasGoodVision = false;
@@ -84,3 +83,44 @@ if (shouldDrive){
 } else {
     console.log("Don't!")
 }
+
+
+switch(day){
+    case 'Monday': 
+        console.log('Plan course structure');
+        console.log('Go to coding meetup');
+        break;
+    case 'Tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'Wednesday':
+    case 'Thursday':
+        console.log('Write code examples');
+    default:
+        console.log('Not a valid day!');
+}
+
+const day = 'Thursday';
+
+if(day === 'Monday'){
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+} else if(day === 'Wednesday' || 'Thursday'){
+    console.log('Write code examples');
+} else{
+    console.log('Not a valid day!');
+}
+
+
+const age = 15;
+age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧')
+
+const bill = 275;
+let tip;
+
+*/
+const bill = 275;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.20;
+
+// Ternary op
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}.`)
