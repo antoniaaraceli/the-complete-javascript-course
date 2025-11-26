@@ -70,5 +70,119 @@ const yearsUntilRetirement = function (birthYear, firstName){
     }   
 }
 console.log(yearsUntilRetirement(1950, 'Cuca'))
+
+//// ARRAYS
+const friends = ['Diana', 'Sebas', 'Romo'];
+console.log(friends);
+
+const years = new Array(2000, 2001, 1999);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[1] = 'Adán';
+console.log(friends);
+// friends = ['Dulce', 'Diego'];
+
+const firstName = 'Antonia';
+const antonia = [firstName, 'Sánchez', 2025 - 1998, 'developer', friends];
+
+console.log(antonia);
+console.log(antonia.length);
+
+// Exercise
+const calcAge = function(birthYear){
+    return 2025 - birthYear;
+}
+
+const years = [1998, 2001, 2004, 1966, 1976];
+
+// calcAge(years);
+const year1 = calcAge(years[0]);
+const year5 = calcAge(years[years.length - 1]);
+console.log(year1);
+console.log(year5);
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[2]), calcAge(years[3]), calcAge(years[years.length - 1])];
+
+console.log(ages);
+
+///// Methods
+// PUSH
+const friends = ['Diana', 'Sebas', 'Romo'];
+console.log(friends);
+
+friends.push('Kari');
+console.log(friends);
+
+// UNSHIFT
+friends.unshift('Ale');
+console.log(friends);
+
+// Remove elements
+friends.pop(); // Last: Kari
+console.log(friends);
+const popped = friends.pop(); // Romo
+console.log(popped);
+console.log(friends);
+
+friends.shift(); // Ale
+console.log(friends);
+
+console.log(friends.indexOf('Sebas'));
+console.log(friends.indexOf('Adán'));
+
+friends.push(23)
+console.log(friends.includes('Sebas'));
+console.log(friends.includes('Adán'));
+console.log(friends.includes(23)); // '23' false
+
+if (friends.includes('Sebas')){
+    console.log('You have a friend called Sebas')
+}
 */
 
+////////// OBJECTS //////////
+const antoArray = [
+    'Antonia',
+    'Sánchez',
+    2025 - 1998,
+    'developer',
+    ['Diana', 'Sebas', 'Romo']
+]
+
+const anto = {
+    firstName: 'Antonia',
+    lastName: 'Sánchez',
+    age: 2025 - 1998,
+    job: 'developer',
+    friends: ['Diana', 'Sebas', 'Romo']
+}
+console.log(anto);
+
+console.log(anto.lastName);
+console.log(anto['lastName']);
+
+const nameKey = 'Name';
+console.log(anto['first' + nameKey]);
+console.log(anto['last' + nameKey]);
+/*
+const insterestedIn = prompt('What do you want to know about Anto? Choose between fisrtName, lastName, age, job, friends.')
+
+if (anto[insterestedIn]){
+    console.log(anto[insterestedIn]);
+} else {
+    console.log('Wrong request!')
+}
+*/
+anto.location = 'León, Guanajuato';
+anto['instagram'] = 'antoniaaraceli.tech';
+
+console.log(anto);
+
+// Challenge
+// Anto has 3 friends, and her best friend is called Diana
+console.log(`${anto.firstName} has ${anto.friends.length} friends, and her best friend is called ${anto.friends[0]}`)
