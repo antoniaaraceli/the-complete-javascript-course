@@ -143,7 +143,6 @@ console.log(friends.includes(23)); // '23' false
 if (friends.includes('Sebas')){
     console.log('You have a friend called Sebas')
 }
-*/
 
 ////////// OBJECTS //////////
 const antoArray = [
@@ -169,7 +168,7 @@ console.log(anto['lastName']);
 const nameKey = 'Name';
 console.log(anto['first' + nameKey]);
 console.log(anto['last' + nameKey]);
-/*
+
 const insterestedIn = prompt('What do you want to know about Anto? Choose between fisrtName, lastName, age, job, friends.')
 
 if (anto[insterestedIn]){
@@ -177,7 +176,7 @@ if (anto[insterestedIn]){
 } else {
     console.log('Wrong request!')
 }
-*/
+
 anto.location = 'León, Guanajuato';
 anto['instagram'] = 'antoniaaraceli.tech';
 
@@ -186,3 +185,77 @@ console.log(anto);
 // Challenge
 // Anto has 3 friends, and her best friend is called Diana
 console.log(`${anto.firstName} has ${anto.friends.length} friends, and her best friend is called ${anto.friends[0]}`)
+
+
+//// OBJECTS METHODS
+const anto = {
+    firstName: 'Antonia',
+    lastName: 'Sánchez',
+    birthYear: 1998,
+    job: 'developer',
+    friends: ['Diana', 'Sebas', 'Romo'],
+    hasDriversLicense: true,
+    /*calcAge: function(){
+        // console.log(this);
+        return 2025 - this.birthYear;
+    }
+   calcAge: function(){
+    this.age = 2025 - this.birthYear;
+    return this.age;
+   },
+   getSummary: function(){
+    return `${this.firstName} is a ${this.calcAge()}-years old ${this.job}, and she has ${this.hasDriversLicense ? 'a' : 'no'}  driver's license.`;
+   }   
+};
+
+// console.log(anto.calcAge())
+// console.log(anto.age);
+
+//// CHALLENGE
+// "Antonia is a 27-years old developer, and she has/hasnt a driver's license"
+console.log(anto.getSummary());
+
+
+//////////////// LOOPS 🌀
+// FOR
+// loops keeps running while condition is TRUE
+for(let rep = 1; rep <= 10; rep++){
+    console.log(`Lifting weights repetition ${rep} 🏋️‍♂️!`);
+}
+
+const antonia = ['Antonia', 'Sánchez', 2025 - 1998, 'developer', ['Diana', 'Romo', 'Sebas'], true];
+
+const types = [];
+
+for(let i = 0; i < antonia.length; i++){
+    console.log(antonia[i] + ' 🌺 ' + typeof antonia[i]);
+    // Filling types array
+   //types[i] = typeof antonia[i];
+   types.push(typeof antonia[i]);
+}
+
+console.log(types);
+
+const years = [2004, 2001, 1998, 1976, 1966];
+const ages = [];
+
+for(let i = 0; i < years.length; i++){
+    ages.push(2025 - years[i]);
+}
+
+console.log(ages)
+
+// continue and break
+console.log("-------ONLY STRINGS--------")
+for(let i = 0; i < antonia.length; i++){
+    if(typeof antonia[i] !== 'string') continue;
+    console.log(antonia[i], typeof antonia[i]);
+}
+
+console.log("-------BREAK WITH NUMBER--------")
+for(let i = 0; i < antonia.length; i++){
+    if(typeof antonia[i] === 'number') break;
+    console.log(antonia[i], typeof antonia[i]);
+}
+
+*/
