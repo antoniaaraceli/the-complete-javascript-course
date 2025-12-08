@@ -1,0 +1,20 @@
+# 4 Steps to solve any problem
+
+1. Make sure you 100% understand the problem. Ask the right question to get a clear picture of the problem.
+
+2. Divide and conquer: Break a big problem into a smaller sub-problems.
+
+3. Don't be afraid to do as much research as you have to.
+
+4. For bigger problems, write pseudo-code before writing the actual code.
+
+
+# The debugging process
+1. IDENTIFY. Becoming aware that there's a bug.
+
+2. FIND. Isolating where exactly the bug is happening in code.
+
+3. FIX. Correct the bug.
+
+4. PREVENT. Preventing in from happening again.
+
